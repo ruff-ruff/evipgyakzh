@@ -8,7 +8,7 @@ namespace Common
 {
     public class ClassRoom
     {
-        private List<Person> students;
+        private List<Person> students = new List<Person>();
 
         public void Add(Person person)
         {
