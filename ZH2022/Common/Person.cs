@@ -27,7 +27,7 @@ namespace Common
 
         public string GetDiscription()
         {
-            return $"{Name} ({Height} cm) születésnapja {DateTime.Now.Subtract(new DateTime(Age,0,0))}";
+            return $"{Name} ({Height} cm) születésnapja {DateTime.Now.Year-Age}.{DateTime.Now.Month}.{DateTime.Now.Day}";
         }
     }
 }
