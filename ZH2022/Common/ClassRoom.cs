@@ -18,5 +18,16 @@ namespace Common
         {
             return students.Count();
         }
+
+        public double GetAverageAge()
+        {
+            return students.Average(x => x.Age);
+        }
+
+        public Person GetTallestPerson()
+        {
+            int maxHeight = students.Max(x => x.Height);
+            return students.Where(x => x.Height == maxHeight).First();
+        }
     }
 }

@@ -24,5 +24,10 @@ namespace Common
         {
             return new Person("Csaba", 21, 180);
         }
+
+        public string GetDiscription()
+        {
+            return $"{Name} ({Height} cm) születésnapja {DateTime.Now.Subtract(new DateTime(Age,0,0))}";
+        }
     }
 }
